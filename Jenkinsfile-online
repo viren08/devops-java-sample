@@ -6,7 +6,7 @@ pipeline {
   }
 
     parameters {
-        string(name:'TAG_NAME',defaultValue: 'v0.0.1',description:'')
+        string(name:'TAG_NAME',defaultValue: '',description:'')
     }
 
     environment {
@@ -18,6 +18,7 @@ pipeline {
         GITHUB_ACCOUNT = 'viren08'
         APP_NAME = 'devops-java-sample'
         SONAR_CREDENTIAL_ID = 'sonar-token'
+        BRANCH_NAME = 'master'
     }
 
     stages {
